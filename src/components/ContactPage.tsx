@@ -17,12 +17,12 @@ const ContactPage: React.FC = () => {
   };
 
   return (
-    <div className="pt-32 pb-16">
+    <div className="pt-32 pb-16 bg-gradient-to-b from-blue-50 to-white"> {/* Light blue gradient background */}
       <div className="container mx-auto px-4">
         <motion.h1 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="text-4xl font-bold text-center mb-12"
+          className="text-4xl font-bold text-center mb-12 text-blue-600"
         >
           Contact Us
         </motion.h1>
@@ -33,7 +33,7 @@ const ContactPage: React.FC = () => {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
           >
-            <h2 className="text-2xl font-semibold mb-6">Get in Touch</h2>
+            <h2 className="text-2xl font-semibold mb-6 text-blue-600">Get in Touch</h2>
             <div className="space-y-6">
               <motion.div 
                 whileHover={{ x: 10 }}
@@ -41,8 +41,8 @@ const ContactPage: React.FC = () => {
               >
                 <MapPin className="w-6 h-6 text-blue-600" />
                 <div>
-                  <h3 className="font-semibold">Address</h3>
-                  <p className="text-gray-600">123 Plumbing Street<br />City, State 12345</p>
+                  <h3 className="font-semibold text-blue-600">Address</h3>
+                  <p className="text-gray-700">123 Plumbing Street<br />City, State 12345</p>
                 </div>
               </motion.div>
               <motion.div 
@@ -51,8 +51,8 @@ const ContactPage: React.FC = () => {
               >
                 <Phone className="w-6 h-6 text-blue-600" />
                 <div>
-                  <h3 className="font-semibold">Phone</h3>
-                  <p className="text-gray-600">(555) 123-4567</p>
+                  <h3 className="font-semibold text-blue-600">Phone</h3>
+                  <p className="text-gray-700">+254-714-748-199</p>
                 </div>
               </motion.div>
               <motion.div 
@@ -61,8 +61,8 @@ const ContactPage: React.FC = () => {
               >
                 <Mail className="w-6 h-6 text-blue-600" />
                 <div>
-                  <h3 className="font-semibold">Email</h3>
-                  <p className="text-gray-600">info@proplumb.com</p>
+                  <h3 className="font-semibold text-blue-600">Email</h3>
+                  <p className="text-gray-700">info@proplumb.com</p>
                 </div>
               </motion.div>
               <motion.div 
@@ -71,8 +71,8 @@ const ContactPage: React.FC = () => {
               >
                 <Clock className="w-6 h-6 text-blue-600" />
                 <div>
-                  <h3 className="font-semibold">Hours</h3>
-                  <p className="text-gray-600">24/7 Emergency Service<br />Mon-Fri: 8am-6pm (Regular Hours)</p>
+                  <h3 className="font-semibold text-blue-600">Hours</h3>
+                  <p className="text-gray-700">24/7 Emergency Service<br />Mon-Fri: 8am-6pm (Regular Hours)</p>
                 </div>
               </motion.div>
             </div>
@@ -84,7 +84,7 @@ const ContactPage: React.FC = () => {
             animate={{ opacity: 1, x: 0 }}
             className="bg-white rounded-lg shadow-lg p-8"
           >
-            <h2 className="text-2xl font-semibold mb-6">Send Us a Message</h2>
+            <h2 className="text-2xl font-semibold mb-6 text-blue-600">Send Us a Message</h2>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">

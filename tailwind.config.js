@@ -1,9 +1,13 @@
 module.exports = {
   content: [
-    "./src/**/*.{js,ts,jsx,tsx}", // Include all JS/TS/JSX/TSX files in the src directory
+    "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        bright: ['Bright', 'sans-serif'], // Add Bright font
+      },
+    },
   },
   plugins: [],
 };

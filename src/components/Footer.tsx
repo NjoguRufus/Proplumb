@@ -35,7 +35,7 @@ const Footer: React.FC<FooterProps> = ({ setActivePage }) => {
             <ul className="space-y-2 text-blue-100">
               <li className="flex items-center">
                 <Phone className="w-4 h-4 mr-2" />
-                (555) 123-4567
+                +254-714-748-199
               </li>
               <li className="flex items-center">
                 <Mail className="w-4 h-4 mr-2" />
@@ -80,8 +80,24 @@ const Footer: React.FC<FooterProps> = ({ setActivePage }) => {
             </div>
           </div>
         </div>
+
+        {/* Developer Credit Section */}
         <div className="mt-8 pt-8 border-t border-blue-400 text-center text-blue-100">
-          <p>&copy; {new Date().getFullYear()} ProPlumb. All rights reserved.</p>
+          <p className="flex items-center justify-center space-x-2">
+            <span>Developed and Maintained by</span>
+            <a
+              href="https://astraronix.vercel.app" // Updated URL
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white transition"
+            >
+              <img
+                src="https://i.imgur.com/T7mH4Ly.png" // Astraronix logo
+                alt="Astraronix Solutions Logo"
+                className="h-6 w-auto" // Adjust the size as needed
+              />
+            </a>
+          </p>
         </div>
       </div>
     </footer>

@@ -9,7 +9,7 @@ interface HomePageProps {
 
 const HomePage: React.FC<HomePageProps> = ({ setActivePage, setSelectedService }) => {
   return (
-    <>
+    <div className="bg-gradient-to-b from-blue-50 to-white"> {/* Light blue gradient background */}
       {/* Hero Section */}
       <motion.section 
         initial={{ opacity: 0 }}
@@ -65,13 +65,13 @@ const HomePage: React.FC<HomePageProps> = ({ setActivePage, setSelectedService }
       </motion.section>
 
       {/* Service Highlights */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16">
         <div className="container mx-auto px-4">
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl font-bold text-center mb-12"
+            className="text-3xl font-bold text-center mb-12 text-blue-600"
           >
             Our Services
           </motion.h2>
@@ -107,8 +107,8 @@ const HomePage: React.FC<HomePageProps> = ({ setActivePage, setSelectedService }
                 }}
               >
                 <div className="flex justify-center mb-4">{service.icon}</div>
-                <h3 className="text-xl font-semibold mb-2">{service.title}</h3>
-                <p className="text-gray-600">{service.description}</p>
+                <h3 className="text-xl font-semibold mb-2 text-blue-600">{service.title}</h3>
+                <p className="text-gray-700">{service.description}</p>
               </motion.div>
             ))}
           </div>
@@ -122,16 +122,16 @@ const HomePage: React.FC<HomePageProps> = ({ setActivePage, setSelectedService }
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            className="text-3xl font-bold text-center mb-12"
+            className="text-3xl font-bold text-center mb-12 text-blue-600"
           >
             Why Choose Us
           </motion.h2>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
-              { text: 'Licensed & Insured', icon: <Shield className="w-6 h-6" /> },
-              { text: '10+ Years Experience', icon: <Star className="w-6 h-6" /> },
-              { text: '24/7 Service', icon: <Clock className="w-6 h-6" /> },
-              { text: 'Free Estimates', icon: <MessageSquare className="w-6 h-6" /> }
+              { text: 'Licensed & Insured', icon: <Shield className="w-6 h-6 text-blue-600" /> },
+              { text: '10+ Years Experience', icon: <Star className="w-6 h-6 text-blue-600" /> },
+              { text: '24/7 Service', icon: <Clock className="w-6 h-6 text-blue-600" /> },
+              { text: 'Free Estimates', icon: <MessageSquare className="w-6 h-6 text-blue-600" /> }
             ].map((item, index) => (
               <motion.div
                 key={index}
@@ -142,7 +142,7 @@ const HomePage: React.FC<HomePageProps> = ({ setActivePage, setSelectedService }
                 className="flex items-center justify-center space-x-3 bg-blue-50 p-4 rounded-lg"
               >
                 <div className="text-blue-600">{item.icon}</div>
-                <span className="font-medium">{item.text}</span>
+                <span className="font-medium text-gray-700">{item.text}</span>
               </motion.div>
             ))}
           </div>
@@ -171,7 +171,7 @@ const HomePage: React.FC<HomePageProps> = ({ setActivePage, setSelectedService }
           </motion.a>
         </div>
       </section>
-    </>
+    </div>
   );
 };
 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 import { Phone } from 'lucide-react';
 import { AnimatePresence } from 'framer-motion';
 import Header from './components/Header';
@@ -8,6 +8,9 @@ import HomePage from './components/HomePage';
 import AboutPage from './components/AboutPage';
 import ServicesPage from './components/ServicesPage';
 import ContactPage from './components/ContactPage';
+
+// Import the local video file
+import backgroundVideo from './assets/Seniors Plumbing - Background Video (No Sound) - Seniors Plumbing (720p, h264).mp4';
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -18,21 +21,24 @@ function App() {
     home: <HomePage setActivePage={setActivePage} setSelectedService={setSelectedService} />,
     about: <AboutPage />,
     services: <ServicesPage selectedService={selectedService} setSelectedService={setSelectedService} />,
-    contact: <ContactPage />
+    contact: <ContactPage />,
   };
 
   return (
     <div className="min-h-screen bg-white relative overflow-hidden">
       {/* Background Video */}
-      <video 
-        autoPlay 
-        loop 
-        muted 
+      <video
+        autoPlay
+        loop
+        muted
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
       >
-        <source src="https://www.pexels.com/video/water-flowing-in-a-pipe-856213/" type="video/mp4" />
+        <source src={backgroundVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
+
+      {/* Overlay to make text more readable */}
+      <div className="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
 
       {/* Content */}
       <div className="relative z-10">

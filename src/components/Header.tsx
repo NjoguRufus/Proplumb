@@ -53,7 +53,7 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen, activePage, 
               className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition flex items-center"
             >
               <Phone className="w-4 h-4 mr-2" />
-              (555) 123-4567
+              +254-714-748-199
             </a>
           </motion.div>
           <button
