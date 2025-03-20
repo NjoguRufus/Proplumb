@@ -49,7 +49,7 @@ const Header: React.FC<HeaderProps> = ({ isMenuOpen, setIsMenuOpen, activePage, 
             className="hidden md:block"
           >
             <a 
-              href="tel:5551234567"
+              href="tel:+254-714-748-199"
               className="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition flex items-center"
             >
               <Phone className="w-4 h-4 mr-2" />
