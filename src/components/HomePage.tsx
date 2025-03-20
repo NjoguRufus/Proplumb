@@ -80,16 +80,19 @@ const HomePage: React.FC<HomePageProps> = ({ setActivePage, setSelectedService }
               {
                 title: 'Emergency Plumbing',
                 icon: <Clock className="w-12 h-12 text-blue-600" />,
+                image: "https://tse1.mm.bing.net/th?id=OIP.WphG8jNwA5eLBLwkKwFyXwHaE8&pid=Api", // Emergency plumbing image
                 description: '24/7 emergency plumbing services for urgent repairs'
               },
               {
                 title: 'Leak Detection',
                 icon: <Shield className="w-12 h-12 text-blue-600" />,
+                image: "https://tse2.mm.bing.net/th?id=OIP.ccaArjRL-H9-CkmD_Gj1KgHaE8&pid=Api", // Leak detection image
                 description: 'Advanced leak detection and repair services'
               },
               {
                 title: 'Drain Cleaning',
                 icon: <CheckCircle2 className="w-12 h-12 text-blue-600" />,
+                image: "https://tse4.mm.bing.net/th?id=OIP.byRhUoZh0MYvpn97fMemDwHaE8&pid=Api", // Drain cleaning image
                 description: 'Professional drain cleaning and maintenance'
               }
             ].map((service, index) => (
@@ -106,6 +109,12 @@ const HomePage: React.FC<HomePageProps> = ({ setActivePage, setSelectedService }
                   setActivePage('services');
                 }}
               >
+                {/* Service Image */}
+                <img 
+                  src={service.image} 
+                  alt={service.title} 
+                  className="w-full h-48 object-cover rounded-lg mb-4"
+                />
                 <div className="flex justify-center mb-4">{service.icon}</div>
                 <h3 className="text-xl font-semibold mb-2 text-blue-600">{service.title}</h3>
                 <p className="text-gray-700">{service.description}</p>
@@ -161,7 +170,7 @@ const HomePage: React.FC<HomePageProps> = ({ setActivePage, setSelectedService }
             Need Emergency Plumbing Service?
           </motion.h2>
           <motion.a
-            href="tel:+254-714-748-199"
+            href="tel:5551234567"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="bg-white text-blue-600 px-8 py-4 rounded-full hover:bg-gray-100 transition flex items-center mx-auto inline-flex"
