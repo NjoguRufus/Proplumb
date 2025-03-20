@@ -15,7 +15,7 @@ const HomePage: React.FC<HomePageProps> = ({ setActivePage, setSelectedService }
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 1 }}
-        className="pt-32 pb-12 md:pt-40 md:pb-20 px-4"
+        className="h-screen flex items-center justify-center px-4" // Full screen height (h-screen) and centered content
         style={{
           backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1581244277943-fe4a9c777189?auto=format&fit=crop&q=80")',
           backgroundSize: 'cover',
