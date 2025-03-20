@@ -167,7 +167,7 @@ const HomePage: React.FC<HomePageProps> = ({ setActivePage, setSelectedService }
             className="bg-white text-blue-600 px-8 py-4 rounded-full hover:bg-gray-100 transition flex items-center mx-auto inline-flex"
           >
             <Phone className="w-5 h-5 mr-2" />
-            Call Us Now: (555) 123-4567
+            Call Us Now: +254-714-748-199
           </motion.a>
         </div>
       </section>
