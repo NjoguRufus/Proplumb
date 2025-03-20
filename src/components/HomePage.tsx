@@ -161,7 +161,7 @@ const HomePage: React.FC<HomePageProps> = ({ setActivePage, setSelectedService }
             Need Emergency Plumbing Service?
           </motion.h2>
           <motion.a
-            href="tel:5551234567"
+            href="tel:+254-714-748-199"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="bg-white text-blue-600 px-8 py-4 rounded-full hover:bg-gray-100 transition flex items-center mx-auto inline-flex"
